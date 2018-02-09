@@ -13,7 +13,7 @@ namespace DBListen
 		{
 			InitializeComponent();
 
-			MainPage = new DBListen.MainPage();
+			MainPage = new DBListen.MainTab();
 		}
 
 		protected override void OnStart ()
