@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.css">
+
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css?1">
+  </head>
+  <body>
+
+
+  <!-- Status bar overlay for fullscreen mode-->
+  <div class="statusbar-overlay"></div>
+  <!-- Panels overlay-->
+  <div class="panel-overlay"></div>
+  <!-- Left panel with reveal effect-->
+  <div class="panel panel-left panel-reveal">
+    <div class="content-block">
+      <p>Left panel content goes here</p>
+    </div>
+  </div>
+  <!-- Right panel with cover effect-->
+  <div class="panel panel-right panel-cover">
+    <div class="content-block">
+      <p>Right panel content goes here</p>
+    </div>
+  </div>
+  <!-- Views, and they are tabs-->
+  <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+  <div class="views tabs toolbar-through">
+    <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+    <div id="view-1" class="view view-main tab active">
+      <!-- We can make with view with navigation, let's add Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="sliding"><i class="icon demo-icon-1" style="margin-right:8px;margin-top:0px;"></i>来自唐能通的消息</div>
+        </div>
+      </div>
+      <!-- Pages-->
+      <div class="pages">
+        <!-- Page, data-page contains page name-->
+        <div data-page="index-1" class="page">
+
+          <div class="page-content pull-to-refresh-content" data-viewtype="gg" data-iconpath="https://gpk01.gwgz.com:666/images/tnt/avter-200.jpg">
+            <div class="pull-to-refresh-layer">
+              <div class="preloader"></div>
+              <div class="pull-to-refresh-arrow"></div>
+            </div>
+            <div class="list-block media-list" style="padding-top:8px;">
+              <ul >
+
+              </ul>
+              <div class="list-block-label">
+                <p>下拉可以刷新当前页面.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Second view (for second wrap)-->
+    <div id="view-2" class="view tab">
+      <!-- We can make with view with navigation, let's add Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="center sliding"><i class="icon demo-icon-2" style="margin-right:8px;margin-top:0px;"></i>内部课</div>
+        </div>
+      </div>
+      <div class="pages ">
+        <div data-page="index-2" class="page">
+
+          <div class="page-content pull-to-refresh-content  infinite-scroll" data-viewtype="gpk" data-iconpath="https://gpk01.gwgz.com:666/images/tnt/00.jpg">
+            <div class="pull-to-refresh-layer">
+              <div class="preloader"></div>
+              <div class="pull-to-refresh-arrow"></div>
+            </div>
+            <div class="list-block media-list" style="padding-top:8px;">
+              <ul >
+
+              </ul>
+              <!-- Preloader -->
+              <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+              </div>
+              <div class="list-block-label">
+                <p>下拉可以刷新当前页面.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div id="view-3" class="view tab">
+      <!-- We can make with view with navigation, let's add Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="center sliding"><i class="icon demo-icon-3" style="margin-right:8px;margin-top:0px;"></i>免费课</div>
+        </div>
+      </div>
+      <div class="pages">
+        <div data-page="index-3" class="page">
+
+          <div class="page-content pull-to-refresh-content infinite-scroll" data-viewtype="gsk" data-iconpath="https://gpk01.gwgz.com:666/images/tnt/003.jpg">
+            <div class="pull-to-refresh-layer">
+              <div class="preloader"></div>
+              <div class="pull-to-refresh-arrow"></div>
+            </div>
+            <div class="list-block media-list" style="padding-top:8px;">
+              <ul >
+
+              </ul>
+              <!-- Preloader -->
+              <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+              </div>
+              <div class="list-block-label">
+                <p>下拉可以刷新当前页面.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="view-4" class="view tab">
+      <div class="pages navbar-fixed">
+        <div data-page="index-4" class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="center">我的</div>
+            </div>
+          </div>
+          <div class="page-content my-info">
+            <div class="my-name1" style="display:none;">游客</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-name"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title label">用户名</div>
+                      <div class="item-input">
+                        <div class="label my-name">游客</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-email"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title label">有效期</div>
+                      <div class="item-input">
+                        <div class="label my-charge">游客可以收看下方免费课栏目的免费课件！</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+            <div class="content-block">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Tabbar-->
+    <div class="toolbar tabbar tabbar-labels">
+
+      <div class="toolbar-inner">
+        <a href="#view-1" class="tab-link active">
+          <i class="icon demo-icon-1"></i>
+          <span class="tabbar-label">广场</span>
+        </a>
+        <a href="#view-2" class="tab-link">
+          <i class="icon demo-icon-2"></i>
+          <span class="tabbar-label">磨耳朵</span>
+        </a>
+
+        <a href="#view-3" class="tab-link">
+          <i class="icon demo-icon-3"><span class="badge bg-red" style="display:none;">4</span></i>
+          <span class="tabbar-label">消息</span>
+        </a>
+
+        <a href="#view-4" class="tab-link">
+          <i class="icon demo-icon-4"></i>
+          <span class="tabbar-label">我的</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- About Popup -->
+  <div class="popup popup-about">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left">
+          <a href="#" class="link close-popup">
+            <i class="icon icon-back"></i>
+            <span>返回</span>
+          </a>
+        </div>
+        <div class="center"><span class="popup-title"></span></div>
+
+        <div class="right">
+          <a href="#" class="link">
+            <i class="icon icon-close"></i>
+
+
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="content-block">
+      <div class="popup-content">
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="login-screen">
+    <!-- Default view-page layout -->
+    <div class="view">
+      <div class="page">
+        <!-- page-content has additional login-screen content -->
+        <div class="page-content login-screen-content">
+          <div class="login-screen-title"><i class="icon demo-icon-99" style="margin-right:8px;margin-top:0px;"></i>唐能通短线是银</div>
+          <!-- Login form -->
+          <form>
+            <div class="list-block">
+              <ul>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">账号</div>
+                    <div class="item-input">
+                      <input type="text" name="login-username" placeholder="用户名一般为姓名">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">密码</div>
+                    <div class="item-input">
+                      <input type="password" name="login-password" placeholder="密码">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="#" class="item-link list-button login-button">登录</a>
+                </li>
+              </ul>
+              <div class="list-block-label">
+                <p>用户名注册开通，请联系QQ：2881559071</p>
+                <p><a href="#" class="close-login-screen">取消登陆</a></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/pageInit.js?d"></script>
+    <script type="text/javascript" src="js/my-app.js?"></script>
+
+
+    <sdcript>
+
+    function clickprompt(){
+    // 调用prompt（）
+    var result=prompt("js://cpp?arg1=111&arg2=222");
+    alert("demo " + result);
+}
+
+      </sdcript>
+  </body>
+</html>

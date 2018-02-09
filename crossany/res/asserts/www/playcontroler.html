@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>My App</title>
+  <!-- Path to Framework7 Library CSS-->
+  <link rel="stylesheet" href="css/framework7.ios.min.css">
+  <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="css/my-app.css?1">
+  <style>
+      i.demo-icon-play {
+        width: 48px;
+        height: 48px;
+        background-image: url("img/resume.png");
+      }
+      .active i.demo-icon-play {
+        background-image: url("img/pause.png");
+      }
+
+      i.demo-icon-stop {
+        width: 48px;
+        height: 48px;
+        background-image: url("img/stop.png");
+      }
+  </style>
+</head>
+<body style="background-color:#000">
+<!-- Views -->
+<div class="views"  style="background-color:#000">
+  <!-- Your main view -->
+  <div class="view view-main">
+    <div class="pages">
+      <div data-page="about" class="page">
+        <div class="page-content"  style="background-color:#000">
+          <div class="row no-gutter" style="background-color:#000">
+            <div class="col-20"></div>
+            <div class="col-auto" style="text-align:center;">
+              <i class="icon demo-icon-play" style="margin-top:6px;"></i>
+              <i class="icon demo-icon-stop" style="margin-top:6px;margin-left:20px;"></i>
+            </div>
+            <div class="col-20"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/playcontrol.js"></script>
+
+</body>
+</html>
