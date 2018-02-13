@@ -24,9 +24,5 @@ using namespace Windows::UI::Xaml::Navigation;
 MainPage::MainPage()
 {
 	InitializeComponent();
-	WebView^ wv = (WebView^)this->FindName("mainwv");
-	Uri^ u = ref new Uri("http://www.baidu.com");
-	wv->Source = u;
-	char * p = new char[120];
-	delete[] p;
+
 }

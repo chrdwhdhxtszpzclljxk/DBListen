@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="f1f5dc3b-fc7d-4a2a-9a4d-2056552c203a"
+    Name="b417f838-f52f-4b40-ae2f-214c3087a44f"
     Publisher="CN=Administrator"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="f1f5dc3b-fc7d-4a2a-9a4d-2056552c203a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="b417f838-f52f-4b40-ae2f-214c3087a44f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>DBListen</DisplayName>

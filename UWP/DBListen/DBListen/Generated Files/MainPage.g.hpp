@@ -25,14 +25,8 @@ void ::DBListen::MainPage::InitializeComponent()
 
 void ::DBListen::MainPage::Connect(int __connectionId, ::Platform::Object^ __target)
 {
-    switch (__connectionId)
-    {
-        case 1:
-            {
-                this->mainwv = safe_cast<::Windows::UI::Xaml::Controls::WebView^>(__target);
-            }
-            break;
-    }
+    __connectionId;         // unreferenced 
+    __target;               // unreferenced
     _contentLoaded = true;
 }
 
